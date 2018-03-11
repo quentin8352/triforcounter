@@ -200,7 +200,7 @@ bot.on('message', message => {
 
 });
 
-bot.login(token);
+bot.login(process.env.BOT_TOKEN);
 
 function addCounter(id, title) {
 	if (inputFilter.test(title) && title != "addcounter" && title != "delcounter") {
